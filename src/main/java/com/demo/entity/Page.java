@@ -9,13 +9,16 @@ import java.util.Objects;
 @Entity
 @Table(name = "dt_page")
 public class Page {
+  @Id
   private Long id;
   private String name;
   private String action;
   private String description;
+
+  @ManyToOne
   private Module module;
 
-  @Id
+
   public Long getId() {
     return id;
   }
@@ -40,7 +43,6 @@ public class Page {
   public void setDescription(String description) {
     this.description = description;
   }
-  @ManyToOne
   public Module getModule() {
     return module;
   }
