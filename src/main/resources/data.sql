@@ -1,0 +1,2 @@
+INSERT INTO DT_MODULE (label, display_name) VALUES ('mod1', 'Module 1'), ('mod2', 'Module 2'), ('mod3', 'Module 3');
+INSERT INTO DT_PAGE (name, action, description, module_id) VALUES ('page1', 'action1', 'desc1', 1);
